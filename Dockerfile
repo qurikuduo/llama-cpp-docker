@@ -24,11 +24,11 @@ COPY --from=0 /srv/llama.cpp/build/bin/llama-cli /usr/local/bin/llama-cli
 COPY --from=0 /srv/llama.cpp/build/bin/llama-server /usr/local/bin/llama-server
 
 # create llama user and set home directory
-RUN useradd --system --create-home llama
+# RUN useradd --system --create-home llama
 
-USER llama
+# USER llama
 
-WORKDIR /home/llama
+# WORKDIR /home/llama
 
 EXPOSE 8080
 
