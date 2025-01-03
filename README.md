@@ -12,6 +12,7 @@ used instead.
 ## Quickstart
 Must be install docker-compose first.
 Must download minicpm3-4b-q4_k_m.gguf first ( see: docker-compose.yml volumes config section ).
+If you want using other LLM just edit docker-compose.yml, then you can run llama.cpp docker offline.
 ```bash
 make build
 # make llama-2-13b
