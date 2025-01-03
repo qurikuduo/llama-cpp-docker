@@ -12,13 +12,13 @@ endif
 
 up:
 ifdef HAS_NVIDIA_GPU
-	$(DOCKER) compose -f docker-compose.yml -f docker-compose.gpu.yml up
+	$(DOCKER)-compose -f docker-compose.yml -f docker-compose.gpu.yml up
 else
-	$(DOCKER) compose -f docker-compose.yml up
+	$(DOCKER)-compose -f docker-compose.yml up
 endif
 
 down:
-	$(DOCKER) compose down
+	$(DOCKER)-compose down
 
 %:
 	cd models && ../docker-entrypoint.sh $@
