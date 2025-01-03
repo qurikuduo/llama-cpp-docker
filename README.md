@@ -10,10 +10,11 @@ If you don't have an Nvidia GPU with CUDA then the CPU version will be built and
 used instead.
 
 ## Quickstart
-
+Must be install docker-compose first.
+Must download minicpm3-4b-q4_k_m.gguf first ( see: docker-compose.yml volumes config section ).
 ```bash
 make build
-make llama-2-13b
+# make llama-2-13b
 make up
 ```
 
